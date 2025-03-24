@@ -1,0 +1,35 @@
+/* XPM */
+static char *floor__1_1726069642[] = {
+/* columns rows colors chars-per-pixel */
+"20 20 9 1 ",
+"  c #252525",
+". c gray15",
+"X c #272727",
+"o c #282826",
+"O c #292927",
+"+ c #282828",
+"@ c gray16",
+"# c #2A2A2A",
+"$ c gray17",
+/* pixels */
+"#X##XX#X#XXXXXXXXXXX",
+"##XXXXXXXXXXXXXXXXX#",
+"#X##XXX#XXXXXXXXXXX#",
+"##XXXXXX#X#XXXX#X#X#",
+"XX#XXXX#XXXXXXXXX#XX",
+"#XXXXXXXXXXXXXXXXXX#",
+"XXXX#XXXXXXXXX#XXXX#",
+"X#X#XXXXXXX#XXXX#XXX",
+"#X#XXX#X#XXXX#X#XX##",
+"#XXXXXXXXXXXXXX##XX#",
+"X###X##XXXXXXXXXXX##",
+"#XXXXXXX#XXXXXX###X#",
+"###X#XXXX#XXXX#XX#XX",
+"#XXXXX#XXXXX#XX#XX##",
+"#X#XXXX#XXX#X#X###X#",
+"##XX#XXXX#X#XXX#X###",
+"XX#XXXXXX###XX##X###",
+"###Xo#X#XXXXX#XXX###",
+"##XXX##X############",
+"####oX#XX#o##XX#####"
+};
