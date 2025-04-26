@@ -39,7 +39,7 @@ On Mac:
    or:   ./pac_man map.ber
 
 
-🎮 Controls
+#🎮 Controls:
   Key | Action
   ↑   | Move Up
   ↓   | Move Down
@@ -49,7 +49,7 @@ On Mac:
   m   | Speed Down
   ESC | Quit the game
 
-📈 Features
+#📈 Features:
   Player movement with collision detection
   
   Collectable dots (score system)
@@ -60,6 +60,6 @@ On Mac:
   
   Smooth frame rendering
 
-✨ Future Improvements
+#✨ Future Improvements:
   - Enenemy follows the player
   - Screens for player loses or success
