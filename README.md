@@ -23,7 +23,7 @@ The project was mainly created to practice:
    git clone <repo copied>
    cd mini_pacman_inC
 
-2. Install MLX library if you haven't already.
+2. Install MLX library if you haven't already.  
 
       On Linux:  
       
