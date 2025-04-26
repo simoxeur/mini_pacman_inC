@@ -26,15 +26,18 @@ The project was mainly created to practice:
 2. Install MLX library if you haven't already.
 
 On Linux:  
-  sudo apt-get install libmlx-dev
-  sudo apt-get install libxext-dev libx11-dev
-On Mac:  
-  brew install mlx
-  
-3. Compile the project:  
-     make
 
-4. Run the game:
+     sudo apt-get install libmlx-dev
+     sudo apt-get install libxext-dev libx11-dev
+On Mac:  
+
+     brew install mlx
+  
+3. Compile the project:
+      
+        make
+
+5. Run the game:
    
          ./pac_man <map_path.ber>
    or:
