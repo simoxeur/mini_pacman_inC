@@ -23,15 +23,15 @@ The project was mainly created to practice:
    git clone <repo copied>
    cd mini_pacman_inC
 
-2. Install MLX library if you haven't already.  
+2. Install MLX library if you haven't already.
 
-      On Linux:  
-      
-           sudo apt-get install libmlx-dev
-           sudo apt-get install libxext-dev libx11-dev
-      On Mac:  
-      
-           brew install mlx
+         On Linux:  
+         
+              sudo apt-get install libmlx-dev
+              sudo apt-get install libxext-dev libx11-dev
+         On Mac:  
+         
+              brew install mlx
   
 3. Compile the project:
       
