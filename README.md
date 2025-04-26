@@ -25,32 +25,36 @@ The project was mainly created to practice:
 
 2. Install MLX library if you haven't already.
 
-On Linux:
+On Linux:  
   sudo apt-get install libmlx-dev
   sudo apt-get install libxext-dev libx11-dev
-On Mac:
+On Mac:  
   brew install mlx
   
-3. Compile the project:
+3. Compile the project:  
      make
 
-4. Run the game:
+4. Run the game:  
          ./pac_man <map_path.ber>
    or:   ./pac_man map.ber
 
 ---
 
-🎮 Controls:
-  Key | Action
-  ↑   | Move Up
-  ↓   | Move Down
-  ←   | Move Left
-  →   | Move Right
-  p   | Speed Up
-  m   | Speed Down
-  ESC | Quit the game
 
-📈 Features:
+
+🎮 Controls:
+  Key | Action  
+  ↑   | Move Up  
+  ↓   | Move Down  
+  ←   | Move Left  
+  →   | Move Right  
+  p   | Speed Up  
+  m   | Speed Down  
+  ESC | Quit the game  
+
+
+
+📈 Features:  
   Player movement with collision detection
   
   Collectable dots (score system)
@@ -61,6 +65,8 @@ On Mac:
   
   Smooth frame rendering
 
-✨ Future Improvements:
+
+
+✨ Future Improvements:  
   - Enenemy follows the player
   - Screens for player loses or success
