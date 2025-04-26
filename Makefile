@@ -1,46 +1,48 @@
 NAME	= pac_man
 
 CC		= cc
-
 CFLAGS	= -Wall -Wextra -Werror
 
-SRCS =			srcs/play.c				srcs/animation.c		srcs/parse.c			\
-				srcs/main.c				srcs/ft_error.c			srcs/ft_itoa.c			\
-				srcs/tools.c			srcs/input_handle.c		srcs/put_str.c			\
-				srcs/check_ways.c 		srcs/map_check.c		srcs/graphic_handle.c	\
-				srcs/flood_fill.c		srcs/clean_up.c			srcs/movement_handle.c	\
+SRCS = srcs/play.c srcs/animation.c srcs/parse.c srcs/main.c srcs/ft_error.c srcs/ft_itoa.c \
+	   srcs/tools.c srcs/input_handle.c srcs/put_str.c srcs/check_ways.c srcs/map_check.c \
+	   srcs/graphic_handle.c srcs/flood_fill.c srcs/clean_up.c srcs/movement_handle.c
+OBJS = ${SRCS:.c=.o}
 
+MLX_DIR = mlx
+MLX_LIB = $(MLX_DIR)/libmlx.a
+MLX_INC = -I$(MLX_DIR)
 
-OBJS	=		${SRCS:.c=.o}
+UNAME_S := $(shell uname -s)
+
+ifeq ($(UNAME_S), Linux)
+	MLX_FLAGS = -L$(MLX_DIR) -lmlx -lXext -lX11 -lm -lz
+endif
+
+ifeq ($(UNAME_S), Darwin)
+	MLX_FLAGS = -L$(MLX_DIR) -lmlx -framework OpenGL -framework AppKit
+endif
 
 all: $(NAME)
 
-# on mac os
-# %.o:%.c pac_man.h
-# 	$(CC) ${CFLAGS}  -Imlx -c $< -o $@
+$(NAME): $(MLX_LIB) $(OBJS)
+	@$(CC) $(OBJS) $(MLX_FLAGS) -o $(NAME)
+	@echo "✅ Compilation finished!"
 
-# on linux
-%.o:%.c pac_man.h
-	@$(CC) ${CFLAGS}  -I/usr/include -Imlx -O3 -c $< -o $@
+%.o: %.c pac_man.h
+	@$(CC) $(CFLAGS) $(MLX_INC) -c $< -o $@
 
-# on linux
-$(NAME): 		${OBJS}
-	@$(CC) ${OBJS} -Lmlx -lmlx -L/usr/lib -Imlx_linux -lXext -lX11 -lm -lz -o ${NAME}
-	@echo finished
-
-# on mac Os
-# $(NAME): 		${OBJS}
-# 	$(CC) ${OBJS} -lmlx -framework OpenGL -framework AppKit -o ${NAME}
+$(MLX_LIB):
+	@$(MAKE) -C $(MLX_DIR)
 
 clean:
-	@rm -f ${OBJS} ${OBJS_B}
-	@echo objects removed
+	@rm -f $(OBJS)
+	@$(MAKE) -C $(MLX_DIR) clean
+	@echo "🧹 Objects removed."
 
-fclean: 	clean
-	@rm -f $(NAME) $(NAME_B)
-	@rm -rf obj
-	@echo removed ${NAME}
+fclean: clean
+	@rm -f $(NAME)
+	@echo "🧹 Executable removed."
 
-re:		fclean all
+re: fclean all
 
-.PHONY: clean
+.PHONY: all clean fclean re
