@@ -25,13 +25,13 @@ The project was mainly created to practice:
 
 2. Install MLX library if you haven't already.
 
-On Linux:  
-
-     sudo apt-get install libmlx-dev
-     sudo apt-get install libxext-dev libx11-dev
-On Mac:  
-
-     brew install mlx
+      On Linux:  
+      
+           sudo apt-get install libmlx-dev
+           sudo apt-get install libxext-dev libx11-dev
+      On Mac:  
+      
+           brew install mlx
   
 3. Compile the project:
       
