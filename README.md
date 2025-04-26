@@ -1,6 +1,8 @@
 # Mini-Pacman 🎮
 
 ![Gameplay Demo](demo.gif)
+
+
 A small **Pac-Man**-style game built in **C** using the **MiniLibX (MLX)** graphics library.
 
 ---
