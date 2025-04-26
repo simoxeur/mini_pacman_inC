@@ -34,15 +34,19 @@ On Mac:
 3. Compile the project:  
      make
 
-4. Run the game:  
+4. Run the game:
+   
          ./pac_man <map_path.ber>
-   or:   ./pac_man map.ber
+   or:
+   
+         ./pac_man map.ber
 
 ---
 
 
 
 🎮 Controls:
+
         Key | Action  
         ↑   | Move Up  
         ↓   | Move Down  
@@ -55,6 +59,7 @@ On Mac:
 
 
 📈 Features:  
+
         Player movement with collision detection
         
         Collectable dots (score system)
@@ -68,5 +73,6 @@ On Mac:
 
 
 ✨ Future Improvements:  
+
         - Enenemy follows the player
         - Screens for player loses or success
