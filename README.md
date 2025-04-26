@@ -43,30 +43,30 @@ On Mac:
 
 
 🎮 Controls:
-  Key | Action  
-  ↑   | Move Up  
-  ↓   | Move Down  
-  ←   | Move Left  
-  →   | Move Right  
-  p   | Speed Up  
-  m   | Speed Down  
-  ESC | Quit the game  
+        Key | Action  
+        ↑   | Move Up  
+        ↓   | Move Down  
+        ←   | Move Left  
+        →   | Move Right  
+        p   | Speed Up  
+        m   | Speed Down  
+        ESC | Quit the game  
 
 
 
 📈 Features:  
-  Player movement with collision detection
-  
-  Collectable dots (score system)
-  
-  Basic enemy move horizontal
-  
-  Victory and game-over conditions
-  
-  Smooth frame rendering
+        Player movement with collision detection
+        
+        Collectable dots (score system)
+        
+        Basic enemy move horizontal
+        
+        Victory and game-over conditions
+        
+        Smooth frame rendering
 
 
 
 ✨ Future Improvements:  
-  - Enenemy follows the player
-  - Screens for player loses or success
+        - Enenemy follows the player
+        - Screens for player loses or success
