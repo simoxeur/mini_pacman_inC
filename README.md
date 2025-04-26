@@ -20,8 +20,8 @@ The project was mainly created to practice:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/mini-pacman.git
-   cd mini-pacman
+   git clone <repo copied>
+   cd mini_pacman_inC
 
 2. Install MLX library if you haven't already.
 
@@ -38,8 +38,9 @@ On Mac:
          ./pac_man <map_path.ber>
    or:   ./pac_man map.ber
 
+---
 
-#🎮 Controls:
+🎮 Controls:
   Key | Action
   ↑   | Move Up
   ↓   | Move Down
@@ -49,7 +50,7 @@ On Mac:
   m   | Speed Down
   ESC | Quit the game
 
-#📈 Features:
+📈 Features:
   Player movement with collision detection
   
   Collectable dots (score system)
@@ -60,6 +61,6 @@ On Mac:
   
   Smooth frame rendering
 
-#✨ Future Improvements:
+✨ Future Improvements:
   - Enenemy follows the player
   - Screens for player loses or success
