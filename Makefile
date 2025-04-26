@@ -1,4 +1,4 @@
-NAME	= so_long
+NAME	= pac_man
 
 CC		= cc
 
@@ -16,11 +16,11 @@ OBJS	=		${SRCS:.c=.o}
 all: $(NAME)
 
 # on mac os
-# %.o:%.c so_long.h
+# %.o:%.c pac_man.h
 # 	$(CC) ${CFLAGS}  -Imlx -c $< -o $@
 
 # on linux
-%.o:%.c so_long.h
+%.o:%.c pac_man.h
 	@$(CC) ${CFLAGS}  -I/usr/include -Imlx -O3 -c $< -o $@
 
 # on linux

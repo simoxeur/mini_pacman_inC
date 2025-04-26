@@ -1,5 +1,5 @@
-#ifndef SO_LONG_H
-#define SO_LONG_H
+#ifndef PAC_MAN_H
+#define PAC_MAN_H
 
 #include <stdio.h>
 #include <unistd.h>
@@ -19,7 +19,7 @@
 #define right XK_Right
 #define down XK_Down
 #define plus XK_p //speed up
-#define mines XK_minus //speed down
+#define mines XK_m //speed down
 #define echap XK_Escape // close
 
 

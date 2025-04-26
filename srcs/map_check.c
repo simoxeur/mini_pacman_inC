@@ -1,26 +1,16 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   map_check.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: medoxer <medoxer@student.42.fr>            +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/15 11:23:52 by medoxer           #+#    #+#             */
-/*   Updated: 2024/09/15 11:24:25 by medoxer          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
-#include "../so_long.h"
+#include "../pac_man.h"
 
 int	check_component(t_map *map, int *err_no)
 {
 	int	player;
+	int	enemy;
 	int	collect;
 	int	exit_door;
 	int	i;
 	int	j;
 
 	player = 0;
+	enemy = 0;
 	collect = 0;
 	exit_door = 0;
 	i = 0;
@@ -32,6 +22,8 @@ int	check_component(t_map *map, int *err_no)
 		{
 			if (map->map[j][i] == 'P')
 				player++;
+			if (map->map[j][i] == 'M')
+				enemy++;
 			if (map->map[j][i] == 'C')
 				collect++;
 			if (map->map[j][i] == 'E')
@@ -41,7 +33,7 @@ int	check_component(t_map *map, int *err_no)
 		j++;
 	}
 	map->stars = collect;
-	if (player != 1 || collect == 0 || exit_door != 1)
+	if (player != 1 || enemy != 1 || collect == 0 || exit_door != 1)
 		return (*err_no = 7, 1);
 	return (0);
 }

@@ -1,16 +1,4 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   movement_handle.c                                  :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: medoxer <medoxer@student.42.fr>            +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/15 11:25:14 by medoxer           #+#    #+#             */
-/*   Updated: 2024/09/15 11:30:37 by medoxer          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
-#include "../so_long.h"
+#include "../pac_man.h"
 
 int	new_map(t_map *map, char *c1, char *c2)
 {
@@ -64,7 +52,7 @@ int	move_and_check(t_map *map, int key_code, int err_no)
 		return (1);
 	if (err_no == 2)
 	{
-		printf("succes\n");
+		printf("success\n");
 		clean_up(map);
 	}
 	if (err_no == 3)

@@ -1,16 +1,4 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   animation.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: medoxer <medoxer@student.42.fr>            +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/15 01:36:48 by medoxer           #+#    #+#             */
-/*   Updated: 2024/09/15 01:40:07 by medoxer          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
-#include "../so_long.h"
+#include "../pac_man.h"
 
 void	enemy_animation(t_map *map)
 {
@@ -18,7 +6,6 @@ void	enemy_animation(t_map *map)
 	int new_x = map->enemy->x + dir;
 	map->enemy->x += dir;
 
-	printf("p_x = %d || e_x = %d\n", map->player->x, map->enemy->x);
 	if (map->map[map->enemy->y][new_x] == 'P' || (map->enemy->x == map->player->x && map->enemy->y == map->player->y))
 	{
 			printf("died\n");
@@ -35,7 +22,7 @@ void	enemy_animation(t_map *map)
 	}
 	else
 		map->enemy->x_moving = !(map->enemy->x_moving);
-	usleep(map->player->speed / 5);
+	usleep(map->player->speed / 10);
 	return ;
 }
 
